@@ -38,7 +38,7 @@ AndroidGUI</panel_attributes>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>620</x>
+      <x>580</x>
       <y>220</y>
       <w>50</w>
       <h>150</h>
@@ -47,18 +47,6 @@ AndroidGUI</panel_attributes>
 fg=default
 bg=white</panel_attributes>
     <additional_attributes>30;30;30;130</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.custom.Component</type>
-    <coordinates>
-      <x>550</x>
-      <y>150</y>
-      <w>200</w>
-      <h>100</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;component&gt;&gt;
-XMPPClient</panel_attributes>
-    <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Package</type>
@@ -119,6 +107,18 @@ bg=white</panel_attributes>
     </coordinates>
     <panel_attributes>'&lt;&lt;component&gt;&gt;
 'ConcreteGame</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Component</type>
+    <coordinates>
+      <x>550</x>
+      <y>150</y>
+      <w>200</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;component&gt;&gt;
+XMPPClient</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
