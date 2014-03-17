@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Plugin configuration for the Alcomat plugin.
+-->
+<plugin>
+    <class>org.jivesoftware.openfire.plugin.AlcomatPlugin</class>
+    <name>Alcomat</name>
+    <description>Server for the Alcomat-Game</description>
+    <author>Droderino</author>
+    <version>1.0.0</version>
+    <date>03/17/2014</date>
+    <url>http://www.alcomatgame.com</url>
+    <minServerVersion>3.9.0</minServerVersion>
+</plugin>

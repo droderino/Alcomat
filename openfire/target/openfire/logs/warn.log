@@ -1,0 +1,82 @@
+2014.03.17 14:40:55 org.jivesoftware.util.LocaleUtils - Missing resource for key: sidebar.sidebar-media-services in locale de
+2014.03.17 15:04:03 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: localhost. Connection: org.jivesoftware.openfire.net.SocketConnection@3e6a0889 socket: Socket[addr=/127.0.0.1,port=2641,localport=5269] session: null
+2014.03.17 15:04:03 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: localhost. Connection: org.jivesoftware.openfire.net.SocketConnection@6bbb381d socket: Socket[addr=/127.0.0.1,port=2642,localport=5269] session: null
+2014.03.17 15:04:23 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: localhost. Connection: org.jivesoftware.openfire.net.SocketConnection@2e504f07 socket: Socket[addr=/127.0.0.1,port=2651,localport=5269] session: null
+2014.03.17 15:04:23 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: localhost. Connection: org.jivesoftware.openfire.net.SocketConnection@b0ea6f8 socket: Socket[addr=/127.0.0.1,port=2652,localport=5269] session: null
+2014.03.17 15:04:38 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: users.jabber.org(DNS lookup: users.jabber.org:5269)
+java.net.UnknownHostException: users.jabber.org
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.createOutgoingSession(LocalOutgoingServerSession.java:280)
+	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.authenticateDomain(LocalOutgoingServerSession.java:167)
+	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.sendPacket(OutgoingSessionPromise.java:262)
+	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.run(OutgoingSessionPromise.java:238)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+2014.03.17 15:05:02 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: alcomat.localhost(DNS lookup: alcomat.localhost:5269)
+java.net.UnknownHostException: alcomat.localhost
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.createOutgoingSession(LocalOutgoingServerSession.java:280)
+	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.authenticateDomain(LocalOutgoingServerSession.java:167)
+	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.sendPacket(OutgoingSessionPromise.java:262)
+	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.run(OutgoingSessionPromise.java:238)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+2014.03.17 15:05:02 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: localhost. Connection: org.jivesoftware.openfire.net.SocketConnection@6eb8d425 socket: Socket[addr=/127.0.0.1,port=2666,localport=5269] session: null
+2014.03.17 15:05:02 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: localhost. Connection: org.jivesoftware.openfire.net.SocketConnection@1a7dafd socket: Socket[addr=/127.0.0.1,port=2667,localport=5269] session: null
+2014.03.17 15:05:18 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: alcomat(DNS lookup: alcomat:5269)
+java.net.UnknownHostException: alcomat
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.createOutgoingSession(LocalOutgoingServerSession.java:280)
+	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.authenticateDomain(LocalOutgoingServerSession.java:167)
+	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.sendPacket(OutgoingSessionPromise.java:262)
+	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.run(OutgoingSessionPromise.java:238)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+2014.03.17 15:06:40 org.jivesoftware.openfire.server.ServerDialback - ServerDialback: OS - Ignoring unexpected answer in validation from: jabber.org id: a15dc4bf5fd225fa for domain: chris-laptop answer:<stream:features xmlns:stream="http://etherx.jabber.org/streams"><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"/><sm xmlns="urn:xmpp:sm:2"><optional/></sm><dialback xmlns="urn:xmpp:features:dialback"><errors/></dialback></stream:features>
+2014.03.17 15:07:38 org.jivesoftware.util.LocaleUtils - Missing resource for key: sidebar.sidebar-media-services in locale de
+2014.03.17 15:07:56 org.jivesoftware.util.LocaleUtils - Missing resource for key: sidebar.sidebar-media-services in locale de
+2014.03.17 15:07:57 org.jivesoftware.util.LocaleUtils - Missing resource for key: sidebar.sidebar-media-services in locale de
+2014.03.17 15:08:12 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: alcomat.localhost(DNS lookup: alcomat.localhost:5269)
+java.net.UnknownHostException: alcomat.localhost
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.createOutgoingSession(LocalOutgoingServerSession.java:280)
+	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.authenticateDomain(LocalOutgoingServerSession.java:167)
+	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.sendPacket(OutgoingSessionPromise.java:262)
+	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.run(OutgoingSessionPromise.java:238)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+2014.03.17 15:08:12 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: localhost. Connection: org.jivesoftware.openfire.net.SocketConnection@3516bcad socket: Socket[addr=/127.0.0.1,port=2768,localport=5269] session: null
+2014.03.17 15:08:12 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: localhost. Connection: org.jivesoftware.openfire.net.SocketConnection@27b786f2 socket: Socket[addr=/127.0.0.1,port=2769,localport=5269] session: null
+2014.03.17 15:08:12 org.jivesoftware.openfire.session.LocalOutgoingServerSession - Error trying to connect to remote server: alcomat.localhost(DNS lookup: alcomat.localhost:5269)
+java.net.UnknownHostException: alcomat.localhost
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.createOutgoingSession(LocalOutgoingServerSession.java:280)
+	at org.jivesoftware.openfire.session.LocalOutgoingServerSession.authenticateDomain(LocalOutgoingServerSession.java:167)
+	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.sendPacket(OutgoingSessionPromise.java:262)
+	at org.jivesoftware.openfire.server.OutgoingSessionPromise$PacketsProcessor.run(OutgoingSessionPromise.java:238)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+2014.03.17 15:08:12 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: localhost. Connection: org.jivesoftware.openfire.net.SocketConnection@157f8315 socket: Socket[addr=/127.0.0.1,port=2770,localport=5269] session: null
+2014.03.17 15:08:12 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: localhost. Connection: org.jivesoftware.openfire.net.SocketConnection@6cb828d5 socket: Socket[addr=/127.0.0.1,port=2771,localport=5269] session: null
+2014.03.17 15:18:05 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: localhost. Connection: org.jivesoftware.openfire.net.SocketConnection@7702e91d socket: Socket[addr=/127.0.0.1,port=2950,localport=5269] session: null
+2014.03.17 15:18:05 org.jivesoftware.openfire.net.SocketReader - Closing session due to incorrect hostname in stream header. Host: localhost. Connection: org.jivesoftware.openfire.net.SocketConnection@7006afbb socket: Socket[addr=/127.0.0.1,port=2951,localport=5269] session: null
