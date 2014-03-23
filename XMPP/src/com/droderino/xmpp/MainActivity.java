@@ -1,6 +1,7 @@
 package com.droderino.xmpp;
 
 import org.jivesoftware.smack.SmackAndroid;
+import org.jivesoftware.smackx.muc.MultiUserChat;
 
 import com.xmppclient.XMPPClientImpl;
 
@@ -14,8 +15,9 @@ import android.widget.EditText;
 public class MainActivity extends Activity {
 
 	private XMPPClientImpl xmppClient;
-	private EditText to;
+	private EditText to, to2;
 	private EditText msg;
+	private MultiUserChat muc;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		to = (EditText)this.findViewById(R.id.editTo);
+		to2 = (EditText)this.findViewById(R.id.editTo2);
 		msg = (EditText)this.findViewById(R.id.editText1);
 		
 		SmackAndroid.init(this);
@@ -60,11 +63,38 @@ public class MainActivity extends Activity {
 			e.printStackTrace();
 		}
 	}
+	
+	public void createMUC(View view)
+	{
+		try {
+			muc = xmppClient.createGroupChat("testroom");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void inviteMuc(View view)
+	{
+		xmppClient.inviteToGroup(muc, to.getText().toString(), "do it");
+		xmppClient.inviteToGroup(muc, to2.getText().toString(), "do it do it");
+	}
+	
+	public void sendMuc(View view)
+	{
+		try {
+			xmppClient.sendMucMessage(muc, this.msg.getText().toString());
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
 	@Override
 	public void onStop()
 	{
 		super.onStop();
+		xmppClient.setStatus(false, "Bye");
 		xmppClient.disconnect();
 	}
 	

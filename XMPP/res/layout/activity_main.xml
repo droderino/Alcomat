@@ -15,7 +15,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/buttonSend"
         android:ems="10" >
+
     </EditText>
     
     <EditText
@@ -65,5 +67,44 @@
         android:layout_centerHorizontal="true"
         android:text="@string/send" 
         android:onClick="send"/>
+
+    <EditText
+        android:id="@+id/editTo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText1"
+        android:layout_alignLeft="@+id/buttonSend"
+        android:layout_marginLeft="22dp"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/ButtonCreaMuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonAdd"
+        android:layout_alignBottom="@+id/buttonAdd"
+        android:layout_alignLeft="@+id/buttonSend"
+        android:onClick="createMUC"
+        android:text="@string/createMuc" />
+
+    <Button
+        android:id="@+id/ButtonInvMuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ButtonSendMuc"
+        android:layout_alignBottom="@+id/ButtonSendMuc"
+        android:layout_alignLeft="@+id/buttonAdd"
+        android:onClick="inviteMuc"
+        android:text="@string/invite" />
+
+    <Button
+        android:id="@+id/ButtonSendMuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ButtonCreaMuc"
+        android:layout_below="@+id/ButtonCreaMuc"
+        android:layout_marginTop="22dp"
+        android:onClick="sendMuc"
+        android:text="@string/sendMuc" />
 
 </RelativeLayout>
