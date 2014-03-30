@@ -1,5 +1,7 @@
 package com.xmppclient;
 
+import java.util.Iterator;
+
 import org.jivesoftware.smack.AndroidConnectionConfiguration;
 import org.jivesoftware.smack.Chat;
 import org.jivesoftware.smack.ChatManager;
@@ -15,12 +17,19 @@ import org.jivesoftware.smackx.muc.InvitationListener;
 import org.jivesoftware.smackx.muc.InvitationRejectionListener;
 import org.jivesoftware.smackx.muc.MultiUserChat;
 
+import com.xmppclient.Listeners.XMPPInvitationListener;
+import com.xmppclient.Listeners.XMPPInvitationRejectionListener;
+import com.xmppclient.Listeners.XMPPMessageListener;
+import com.xmppclient.Listeners.XMPPPacketListener;
+
 import android.util.Log;
 
 public class XMPPClientImpl {
 
 	private String server;
 	private int port;
+	
+	private String room;
 	
 	private XMPPConnection connection;
 	private ChatManager chatManager;
@@ -54,6 +63,14 @@ public class XMPPClientImpl {
 		MultiUserChat.addInvitationListener(connection, invitationListener);
 	}
 	
+	public void disconnect() {
+		if(connection != null && connection.isConnected())
+		{
+			connection.removePacketListener(packetListener);
+			connection.disconnect();
+		}
+	}
+	
 	public void login(String name, String passwd) throws Exception
 	{
 		if(connection != null && connection.isConnected())
@@ -74,13 +91,7 @@ public class XMPPClientImpl {
 		connection.sendPacket(presence);
 	}
 
-	public void disconnect() {
-		if(connection != null && connection.isConnected())
-		{
-			connection.removePacketListener(packetListener);
-			connection.disconnect();
-		}
-	}
+	
 
 	public void sendMessage(String message, String to) throws Exception {
 		Chat chat = chatManager.createChat(to + "@" + server, messageListener);
@@ -89,7 +100,14 @@ public class XMPPClientImpl {
 	
 	public void sendMucMessage(MultiUserChat muc, String message) throws Exception
 	{
+		Iterator<String> iterRooms = MultiUserChat.getJoinedRooms(connection, connection.getUser());
+		while(iterRooms.hasNext())
+			Log.d("_XMPP_", "Rooms: " + iterRooms.next() + "user " + connection.getUser());
+		
 		muc.sendMessage(message);
+		
+		MultiUserChat chat = new MultiUserChat(connection, this.room + "@conference." + server);
+		chat.sendMessage("test " + message);
 	}
 	
 	public void addBuddy(String user, String name) throws Exception
@@ -109,17 +127,20 @@ public class XMPPClientImpl {
 
 			Log.d("_XMPP_", "created room: " + muc.getRoom() + " " + muc.getNickname());
 			
+			this.room = room;
+			
 			return muc;
 		}
 		else
 			return null;
 	}
 
-	public MultiUserChat joinGroupChat(String room) throws Exception
+	public MultiUserChat joinGroupChat(MultiUserChat muc, String room) throws Exception
 	{
-		MultiUserChat muc = new MultiUserChat(connection, room);
+		//MultiUserChat muc = new MultiUserChat(connection, room + "@conference." + server);
 		muc.join(connection.getUser());
 		
+		Log.d("_XMPP_", "joined " + room + " user " + connection.getUser());
 		return muc;
 	}
 	

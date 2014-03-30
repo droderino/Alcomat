@@ -1,4 +1,4 @@
-package com.xmppclient;
+package com.xmppclient.Listeners;
 
 import org.jivesoftware.smack.PacketListener;
 import org.jivesoftware.smack.packet.Message;

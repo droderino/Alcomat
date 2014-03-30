@@ -1,4 +1,4 @@
-package com.xmppclient;
+package com.xmppclient.Listeners;
 
 import org.jivesoftware.smackx.muc.InvitationRejectionListener;
 
