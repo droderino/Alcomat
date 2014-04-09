@@ -94,8 +94,8 @@ public class MainActivity extends Activity {
 	public void onStop()
 	{
 		super.onStop();
-		xmppClient.setStatus(false, "Bye");
-		xmppClient.disconnect();
+		//xmppClient.setStatus(false, "Bye");
+		//xmppClient.disconnect();
 	}
 	
 	@Override

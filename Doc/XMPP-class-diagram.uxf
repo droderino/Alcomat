@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="12.2">
-  <zoom_level>10</zoom_level>
+  <zoom_level>8</zoom_level>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>830</x>
-      <y>110</y>
-      <w>430</w>
-      <h>190</h>
+      <x>488</x>
+      <y>120</y>
+      <w>344</w>
+      <h>152</h>
     </coordinates>
     <panel_attributes>ConnectionManagerImpl
 --
@@ -28,10 +28,10 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>830</x>
-      <y>960</y>
-      <w>420</w>
-      <h>140</h>
+      <x>488</x>
+      <y>800</y>
+      <w>336</w>
+      <h>112</h>
     </coordinates>
     <panel_attributes>MultiUserChatManagerImpl
 --
@@ -50,10 +50,10 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>850</x>
-      <y>650</y>
-      <w>380</w>
-      <h>140</h>
+      <x>504</x>
+      <y>552</y>
+      <w>304</w>
+      <h>112</h>
     </coordinates>
     <panel_attributes>RosterManagerImpl
 --
@@ -69,10 +69,10 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>460</x>
-      <y>0</y>
-      <w>290</w>
-      <h>170</h>
+      <x>192</x>
+      <y>32</y>
+      <w>232</w>
+      <h>136</h>
     </coordinates>
     <panel_attributes>&lt;&lt;interface&gt;&gt;
 ConnectionManager
@@ -92,10 +92,10 @@ ConnectionManager
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>410</x>
-      <y>960</y>
-      <w>360</w>
-      <h>140</h>
+      <x>152</x>
+      <y>800</y>
+      <w>288</w>
+      <h>112</h>
     </coordinates>
     <panel_attributes>&lt;&lt;interface&gt;&gt;
 MultiUserChatManager
@@ -111,10 +111,10 @@ MultiUserChatManager
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>450</x>
-      <y>650</y>
-      <w>250</w>
-      <h>140</h>
+      <x>184</x>
+      <y>552</y>
+      <w>200</w>
+      <h>112</h>
     </coordinates>
     <panel_attributes>&lt;&lt;interface&gt;&gt;
 RosterManager
@@ -132,10 +132,10 @@ RosterManager
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>830</x>
-      <y>430</y>
-      <w>430</w>
-      <h>100</h>
+      <x>488</x>
+      <y>376</y>
+      <w>344</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>SingleUserChatManagerImpl
 --
@@ -150,10 +150,10 @@ RosterManager
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>920</x>
-      <y>1130</y>
-      <w>330</w>
-      <h>120</h>
+      <x>560</x>
+      <y>936</y>
+      <w>264</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>XMPPInvitationListener
 --
@@ -170,10 +170,10 @@ RosterManager
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>910</x>
-      <y>830</y>
-      <w>270</w>
-      <h>100</h>
+      <x>552</x>
+      <y>696</y>
+      <w>216</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>XMPPRosterListener
 --
@@ -189,10 +189,10 @@ RosterManager
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>440</x>
-      <y>440</y>
-      <w>280</w>
-      <h>90</h>
+      <x>176</x>
+      <y>384</y>
+      <w>224</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>&lt;&lt;interface&gt;&gt;
 SingleUserChatManager
@@ -206,10 +206,10 @@ SingleUserChatManager
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>920</x>
-      <y>1270</y>
-      <w>330</w>
-      <h>60</h>
+      <x>560</x>
+      <y>1048</y>
+      <w>264</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>XMPPInvitationRejectionListener
 --
@@ -222,10 +222,10 @@ SingleUserChatManager
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>900</x>
-      <y>570</y>
-      <w>290</w>
-      <h>50</h>
+      <x>544</x>
+      <y>488</y>
+      <w>232</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>XMPPMessageListener
 --
@@ -238,10 +238,10 @@ SingleUserChatManager
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>940</x>
-      <y>340</y>
-      <w>210</w>
-      <h>50</h>
+      <x>576</x>
+      <y>304</y>
+      <w>168</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>XMPPPacketListener
 --
@@ -254,166 +254,166 @@ SingleUserChatManager
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>640</x>
-      <y>140</y>
-      <w>210</w>
-      <h>90</h>
+      <x>336</x>
+      <y>144</y>
+      <w>168</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;</panel_attributes>
-    <additional_attributes>30;30;30;70;190;70</additional_attributes>
+    <additional_attributes>24;24;24;56;152;56</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>740</x>
-      <y>1000</y>
-      <w>110</w>
-      <h>50</h>
+      <x>416</x>
+      <y>832</y>
+      <w>88</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;</panel_attributes>
-    <additional_attributes>30;30;90;30</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>670</x>
-      <y>690</y>
-      <w>200</w>
-      <h>50</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;</panel_attributes>
-    <additional_attributes>30;30;180;30</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>690</x>
-      <y>450</y>
-      <w>160</w>
-      <h>50</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;</panel_attributes>
-    <additional_attributes>30;30;140;30</additional_attributes>
+    <additional_attributes>24;24;72;24</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>360</x>
-      <y>140</y>
-      <w>210</w>
-      <h>350</h>
+      <y>584</y>
+      <w>160</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;</panel_attributes>
+    <additional_attributes>24;24;144;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>376</x>
+      <y>392</y>
+      <w>128</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;</panel_attributes>
+    <additional_attributes>24;24;112;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>112</x>
+      <y>144</y>
+      <w>168</w>
+      <h>280</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>190;30;190;70;30;70;30;330;80;330</additional_attributes>
+    <additional_attributes>152;24;152;56;24;56;24;264;64;264</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>360</x>
-      <y>440</y>
-      <w>110</w>
-      <h>290</h>
+      <x>112</x>
+      <y>384</y>
+      <w>88</w>
+      <h>232</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>30;30;30;270;90;270</additional_attributes>
+    <additional_attributes>24;24;24;216;72;216</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>360</x>
-      <y>680</y>
-      <w>70</w>
-      <h>380</h>
+      <x>112</x>
+      <y>576</y>
+      <w>56</w>
+      <h>304</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>30;30;30;360;50;360</additional_attributes>
+    <additional_attributes>24;24;24;288;40;288</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>1010</x>
-      <y>270</y>
-      <w>50</w>
-      <h>90</h>
+      <x>632</x>
+      <y>248</y>
+      <w>40</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;</panel_attributes>
-    <additional_attributes>30;70;30;30</additional_attributes>
+    <additional_attributes>24;56;24;24</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>1010</x>
-      <y>500</y>
-      <w>50</w>
-      <h>90</h>
+      <x>632</x>
+      <y>432</y>
+      <w>40</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>30;30;30;70</additional_attributes>
+    <additional_attributes>24;24;24;56</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>1010</x>
-      <y>760</y>
-      <w>50</w>
-      <h>90</h>
+      <x>632</x>
+      <y>640</y>
+      <w>40</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>30;30;30;70</additional_attributes>
+    <additional_attributes>24;24;24;56</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>840</x>
-      <y>1070</y>
-      <w>100</w>
-      <h>140</h>
+      <x>496</x>
+      <y>888</y>
+      <w>80</w>
+      <h>112</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>30;30;30;120;80;120</additional_attributes>
+    <additional_attributes>24;24;24;96;64;96</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>840</x>
-      <y>1150</y>
-      <w>100</w>
-      <h>170</h>
+      <x>496</x>
+      <y>952</y>
+      <w>80</w>
+      <h>136</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>30;30;30;150;80;150</additional_attributes>
+    <additional_attributes>24;24;24;120;64;120</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>1230</x>
-      <y>180</y>
-      <w>100</w>
-      <h>330</h>
+      <x>808</x>
+      <y>176</y>
+      <w>80</w>
+      <h>264</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>30;30;80;30;80;240;30;310</additional_attributes>
+    <additional_attributes>24;24;64;24;64;248;24;248</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>1200</x>
-      <y>390</y>
-      <w>130</w>
-      <h>350</h>
+      <x>784</x>
+      <y>400</y>
+      <w>104</w>
+      <h>224</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>110;30;110;80;110;260;30;330</additional_attributes>
+    <additional_attributes>88;24;88;208;24;208</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>1220</x>
-      <y>620</y>
-      <w>110</w>
-      <h>430</h>
+      <x>800</x>
+      <y>584</y>
+      <w>88</w>
+      <h>288</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>90;30;90;340;30;410</additional_attributes>
+    <additional_attributes>72;24;72;272;24;272</additional_attributes>
   </element>
 </diagram>
