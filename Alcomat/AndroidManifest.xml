@@ -22,6 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <service 
+            android:name="com.alcomat.Service"
+            android:label="@string/service_name">
+            
+        </service>
     </application>
 
 </manifest>

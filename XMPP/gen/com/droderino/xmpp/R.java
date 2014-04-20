@@ -17,41 +17,41 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static int activity_horizontal_margin=0x7f040000;
+        public static int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int ButtonCreaMuc=0x7f080007;
-        public static final int ButtonInvMuc=0x7f080008;
-        public static final int ButtonSendMuc=0x7f080009;
-        public static final int action_settings=0x7f08000a;
-        public static final int buttonAdd=0x7f080005;
-        public static final int buttonConnect=0x7f080004;
-        public static final int buttonSend=0x7f080001;
-        public static final int editText1=0x7f080002;
-        public static final int editTo=0x7f080000;
-        public static final int editTo2=0x7f080006;
-        public static final int textView1=0x7f080003;
+        public static int ButtonCreaMuc=0x7f080007;
+        public static int ButtonInvMuc=0x7f080008;
+        public static int ButtonSendMuc=0x7f080009;
+        public static int action_settings=0x7f08000a;
+        public static int buttonAdd=0x7f080005;
+        public static int buttonConnect=0x7f080004;
+        public static int buttonSend=0x7f080001;
+        public static int editText1=0x7f080002;
+        public static int editTo=0x7f080000;
+        public static int editTo2=0x7f080006;
+        public static int textView1=0x7f080003;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
+        public static int activity_main=0x7f030000;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
+        public static int main=0x7f070000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
-        public static final int add=0x7f050005;
-        public static final int app_name=0x7f050000;
-        public static final int connect=0x7f050003;
-        public static final int createMuc=0x7f050006;
-        public static final int hello_world=0x7f050002;
-        public static final int invite=0x7f050007;
-        public static final int send=0x7f050004;
-        public static final int sendMuc=0x7f050008;
+        public static int action_settings=0x7f050001;
+        public static int add=0x7f050005;
+        public static int app_name=0x7f050000;
+        public static int connect=0x7f050003;
+        public static int createMuc=0x7f050006;
+        public static int hello_world=0x7f050002;
+        public static int invite=0x7f050007;
+        public static int send=0x7f050004;
+        public static int sendMuc=0x7f050008;
     }
     public static final class style {
         /** 
@@ -75,10 +75,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static int AppBaseTheme=0x7f060000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static int AppTheme=0x7f060001;
     }
 }
