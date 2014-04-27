@@ -8,6 +8,7 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.Binder;
 import android.os.IBinder;
+import android.util.Log;
 
 public class AlcomatService extends Service{
 
@@ -21,13 +22,15 @@ public class AlcomatService extends Service{
 	@Override
 	public IBinder onBind(Intent intent) {
 		String server = intent.getStringExtra(SERVER);
-		int port = Integer.parseInt( intent.getStringExtra(PORT) );
+		int port = intent.getIntExtra(PORT, 5222);
 		String confPrefix = intent.getStringExtra(CONFPREFIX);
 		
 		try {
+			Log.d("_aService_", "try to connect");
 			connManager = new ConnectionManagerImpl(server, port, confPrefix);
 			connManager.init();
 		} catch (Exception e) {
+			Log.d("_aService_", "connect failed " + (e.getMessage()).toString());
 			e.printStackTrace();
 		}
 		

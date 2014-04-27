@@ -24,7 +24,7 @@
         </activity>
         
         <service 
-            android:name="com.alcomat.Service"
+            android:name="com.alcomat.service.AlcomatService"
             android:label="@string/service_name">
             
         </service>

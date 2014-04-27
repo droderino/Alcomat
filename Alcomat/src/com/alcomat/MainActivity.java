@@ -6,9 +6,12 @@ import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
 import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,6 +23,22 @@ public class MainActivity extends Activity {
 
 	private AlcomatService alcomatService;
 	
+	private ServiceConnection serviceConnection = new ServiceConnection()
+	{
+
+		@Override
+		public void onServiceConnected(ComponentName name, IBinder service) {
+			AlcomatService.AlcomatServiceBinder b = (AlcomatService.AlcomatServiceBinder)service;
+			alcomatService = b.getService();
+		}
+
+		@Override
+		public void onServiceDisconnected(ComponentName name) {
+			alcomatService = null;
+		}
+		
+	};
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -28,6 +47,18 @@ public class MainActivity extends Activity {
 		if (savedInstanceState == null) {
 			getFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
+		}
+		
+		Intent service = new Intent(this, AlcomatService.class);
+		service.putExtra(AlcomatService.SERVER, "ratink.de");
+		service.putExtra(AlcomatService.PORT, 5222);
+		service.putExtra(AlcomatService.CONFPREFIX, "@conference.");
+		
+		try {
+			boolean ret = bindService(service, serviceConnection, Context.BIND_AUTO_CREATE);
+			Log.d("_Alcomat_", "bind service " + ret);
+		} catch(Exception e){
+			e.printStackTrace();
 		}
 	}
 
@@ -67,21 +98,5 @@ public class MainActivity extends Activity {
 			return rootView;
 		}
 	}
-	
-	private ServiceConnection serviceConnection = new ServiceConnection()
-	{
-
-		@Override
-		public void onServiceConnected(ComponentName name, IBinder service) {
-			AlcomatService.AlcomatServiceBinder b = (AlcomatService.AlcomatServiceBinder)service;
-			alcomatService = b.getService();
-		}
-
-		@Override
-		public void onServiceDisconnected(ComponentName name) {
-			alcomatService = null;
-		}
-		
-	};
 
 }
